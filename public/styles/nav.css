@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Bungee", sans-serif;
+  width: 100vw;
+  background-color: #4056A1;
+  padding: 0 1.5em;
+  position: fixed;
+  max-height: 120px;
+  min-height: 6rem;
+
+}
+
+.nav-icons {
+font-family: sans-serif;
+margin-left: auto;
+font-size: 14px;
+justify-content: center;
+
+}
+
+nav > div > i {
+margin-left: 3.5em;
+
+}
+
+nav > div  p {
+  margin-bottom: 10px;
+  
+}
+
+

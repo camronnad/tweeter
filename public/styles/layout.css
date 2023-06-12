@@ -18,6 +18,13 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source sans 3", sans-serif;
+}
+
+main {
+width: 90%;
+margin: 0 5%;
+background-color: #f4f1ec;
 }
 
 /*
