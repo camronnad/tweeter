@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="./styles/header.css" type="text/css" />
-
+  <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -57,12 +57,22 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-
-    <h2> Random Paragram Below</h2>
-
-    <p>In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form action="/tweets" method="POST">
+        <!-- <label for="tweet-text">What are you humming about?</label> -->
+        <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
+        <div id="tweet-button">
+          <button type="submit">Tweet</button>
+          <output id="characters-count"name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+   <h2> Random Paragram Below</h2>
+     <p>In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.
     </p>
-
+    
+    
   </main>
 </body>
 
