@@ -3,11 +3,11 @@ $(document).ready(function() {
     const counter = $('.counter');
     const remainingChars = 140 - $(this).val().length;
     counter.text(remainingChars);
-
+    
     if (remainingChars < 0) {
-      counter.addClass('red-text');
+      $(".counter").css("color", '#f51414');
     } else {
-      counter.removeClass('red-text');
+      $(".counter").css("color", '#000000') 
     }
   });
 });

@@ -5,7 +5,7 @@
   border-bottom: 5px solid #4a4a4a;
   font-weight: bold;
   height: 50px;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 #tweet-button {
@@ -25,11 +25,6 @@ button {
   font-size: xx-large;
 }
 
-#characters-count {
+.counter {
   font-family: "Bungee", sans-serif;
-  color: #4056A1
-}
-
-.red-text {
-  color: red;
 }
