@@ -1,16 +1,19 @@
 #tweet-text {
   border: none;
-  width: 750px;
+  width: 100%;
   background-color: transparent;
   border-bottom: 5px solid #4a4a4a;
   font-weight: bold;
   height: 50px;
+  
   
 }
 
 #tweet-button {
   display: flex;
   justify-content: space-between;
+  
+  
 }
 
 button {
@@ -20,8 +23,14 @@ button {
   border: none;
   margin-bottom: 20px;
   margin-top: 10px;
+  font-size: xx-large;
 }
 
 #characters-count {
   font-family: "Bungee", sans-serif;
+  color: #4056A1
+}
+
+.red-text {
+  color: red;
 }

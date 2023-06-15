@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
+
+  <link rel="stylesheet" href="./styles/tweet-article.css" type="text/css" />
   <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="./styles/header.css" type="text/css" />
@@ -29,8 +30,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
+
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </head>
 
 <body>
@@ -41,16 +44,16 @@
     <span>tweeter</span>
     <div class="nav-icons">
       <p><strong>Write</strong> a new tweet</p>
-      <i class="fa-solid fa-angles-down" style="color: #ff0000;"></i>
+      <i class="fa-solid fa-angles-down" style="color: white"></i>
     </div>
   </nav>
 
-  <header>
+  <header class="header">
     <div class="header-avatar">
-      <img src="/images/profile-hex.png">
+      <img class="elon" src="../images/elon-image.png">
     </div>
     <div>
-      <h2>Your Name</h2>
+      <h2 id="user-name"><strong>Elon</strong> Musk</h2>
     </div>
   </header>
 
@@ -64,15 +67,41 @@
         <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
         <div id="tweet-button">
           <button type="submit">Tweet</button>
-          <output id="characters-count"name="counter" class="counter" for="tweet-text">140</output>
+          <output id="characters-count" name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-   <h2> Random Paragram Below</h2>
-     <p>In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in man's history. We have felt the ground shake and the air shattered by the testing of a Saturn C-1 booster rocket, many times as powerful as the Atlas which launched John Glenn, generating power equivalent to 10,000 automobiles with their accelerators on the floor. We have seen the site where the F-1 rocket engines, each one as powerful as all eight engines of the Saturn combined, will be clustered together to make the advanced Saturn missile, assembled in a new building to be built at Cape Canaveral as tall as a 48 story structure, as wide as a city block, and as long as two lengths of this field.
+    <section>
+      <article>
+        <header class="tweet-header">
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <span>Newton</span>
+          </div>
+          <p>@elonfan345!</p>
+        </header>
+        <p>"Elon Musk never ceases to amaze with his visionary projects. From SpaceX to Tesla, he's constantly pushing
+          the limits of what's possible. Truly an inspiration! #ElonMusk #Innovation"</p>
+        <footer>
+          <p>10 days ago</p>
+          <div>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+    <h2>Visionary Entrepreneur and Innovator | Elon Musk</h2>
+    <p> Bio:
+      Elon Musk, a visionary leader, is the mastermind behind SpaceX and Tesla, revolutionizing space exploration and
+      sustainable transportation. With SpaceX, he pushes the boundaries of aerospace technology, while Tesla disrupts
+      the automotive industry with electric vehicles. Musk's relentless pursuit of innovation and commitment to a
+      sustainable future inspire countless individuals worldwide. His visionary endeavors reshape industries and pave
+      the way for a transformative future.
     </p>
-    
-    
+
+
   </main>
 </body>
 

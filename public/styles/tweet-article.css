@@ -1,0 +1,26 @@
+article {
+  border: 1px solid black;
+  padding: 0 14px;
+  font-size: large;
+  box-shadow: inset;
+}
+
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
+  margin-top: -15px;
+  margin-bottom: -20px;
+  
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  font-size: small;
+}

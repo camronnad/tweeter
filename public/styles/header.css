@@ -1,4 +1,4 @@
-header {
+.header {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -6,19 +6,29 @@ header {
   padding-top: 170px;
   height: 400px;
   flex-direction: column;
-  background-color: #deb200;
-  background-image: url("https://www.transparenttextures.com/patterns/food.png");
-
+  background-color: #898989;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  
 }
+
 
 .header-avatar {
-
   margin-top: -39px;
-
-
+  width: 200;
+  height: 200;
 }
 
-h2 {
+#user-name {
   margin-top: 0;
-  color: #4056A1;
+  color: white;
+  font-size: 40px;
+  border-bottom: 3px solid #4056A1;
+  padding-bottom: 5px;
+  font-weight: 500;
 }
+
+.elon {
+  width: 200px;
+  height: 200px;
+}
+
