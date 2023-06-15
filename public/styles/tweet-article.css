@@ -1,11 +1,11 @@
-article {
-  border: 1px solid black;
+article.tweet {
+  border: 2px solid #4a4a4a;
   padding: 0 14px;
   font-size: large;
-  box-shadow: inset;
+  transition: box;
 }
 
-.tweet-header {
+article.tweet header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,13 +14,35 @@ article {
   margin-top: -15px;
   margin-bottom: -20px;
   
+  
 }
 
-footer {
+article.tweet footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid black;
   font-size: small;
+  margin-top: -5px;
+  
 }
+
+article.tweet:hover {
+ box-shadow: 5px 5px #4056A1
+}
+
+article.tweet .fa-flag:hover {
+color: darkgoldenrod
+
+}
+
+article.tweet .fa-retweet:hover {
+  color: green
+  
+  }
+
+article.tweet .fa-heart:hover {
+  color: red;
+    
+  }

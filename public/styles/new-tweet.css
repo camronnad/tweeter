@@ -5,14 +5,13 @@
   border-bottom: 5px solid #4a4a4a;
   font-weight: bold;
   height: 50px;
-  
-  
+  margin-top: 45px;
 }
 
 #tweet-button {
   display: flex;
   justify-content: space-between;
-  
+  margin-bottom: 25px;
   
 }
 
