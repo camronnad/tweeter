@@ -7,7 +7,7 @@ $(document).ready(function() {
     if (remainingChars < 0) {
       $(".counter").css("color", '#f51414');
     } else {
-      $(".counter").css("color", '#000000') 
+      $(".counter").css("color", '#4a4a4a') 
     }
   });
 });
