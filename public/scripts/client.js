@@ -1,34 +1,6 @@
+$(document).ready(function() {
+ 
 
-
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-]
 
 
 const createTweetElement = function (tweet) {
@@ -43,23 +15,69 @@ const createTweetElement = function (tweet) {
   const $tweetText = $('<p>').text(tweet.content.text);
   const $footer = $('<footer>');
 
-  $footer.append(`<p>${tweet.created_at}</p>`);
+  $footer.append(`<p>${timeago(tweet.created_at).format()}</p>`);
 
   $tweet.append($header);
   $tweet.append($tweetText);
   $tweet.append($footer);
 
-  return $tweet; 
+  return $tweet;
 };
 
-const renderTweets = function(tweets) {
- 
-  for(let tweet of data) {
-     const $tweet = createTweetElement(tweet);
-     $('#tweets-container').append($tweet);
-  }
-}
-renderTweets(data);
+const renderTweets = function (tweets) {
 
+  for (let tweet of tweets) {
+    const $tweet = createTweetElement(tweet);
+    $('#tweet-container').append($tweet);
+  }
+};
+
+
+
+
+  $('#tweet-form').submit(function (event) {
+    event.preventDefault();
+
+    const data = $(this).serialize();
+
+    $.ajax({
+      url: '/tweets',
+      type: 'POST',
+      data: data,
+      success: function (response) {
+        //refresh tweets
+      },
+      error: function (error) {
+
+      }
+    });
+  });
+
+
+
+
+  const loadTweets = function() {
+      $.ajax({
+        url: '/tweets',
+        type: 'GET',
+        dataType: 'json',
+        success: function(tweets) {
+          console.log(tweets);
+          renderTweets(tweets);
+           // This will log the array of tweets to the console
+          // Here you can add code to handle the data and update your webpage
+        },
+        error: function(error) {
+          console.log('Error:', error);
+          // Here you can add code to handle any errors
+        }
+      });
+    }
+    
+    // Call the function to load the tweets
+    loadTweets();
+    
+
+  });
 
 

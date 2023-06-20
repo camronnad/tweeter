@@ -34,7 +34,10 @@
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
- 
+  <script src="
+https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js
+" integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 
@@ -54,8 +57,7 @@
     <span class="header-avatar">
       <img class="elon" src="../images/elon-image.png">
       <div id="badge">
-      <img id="verified-badge" src="./images/verified-badge.png"
-      </div>
+        <img id="verified-badge" src="./images/verified-badge.png" </div>
     </span>
     <div>
       <h2 id="user-name"><strong>Elon</strong> Musk</h2>
@@ -66,82 +68,18 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <form action="/tweets" method="POST">
-        <!-- <label for="tweet-text">What are you humming about?</label> -->
+      <form id="tweet-form">
         <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
         <div id="tweet-button">
-          <button type="submit">Tweet</button>
+          <button id="tweet-button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-    <section>
-      <article class="tweet">
-        <header>
-          <div>
-            <i class="fa-solid fa-mobile"></i>
-            <span>Newton</span>
-          </div>
-          <p>@elonfan345</p>
-        </header>
-        <p>"Elon Musk never ceases to amaze with his visionary projects. From SpaceX to Tesla, he's constantly pushing
-          the limits of what's possible. Truly an inspiration! #ElonMusk #Innovation 🌟✨" </p>
-        <footer>
-          <p>10 days ago</p>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div>
-            <i class="fa-solid fa-mobile"></i>
-            <span>JEFF HANSON</span>
-          </div>
-          <p>@iloveelon9</p>
-        </header>
-        <p>
-          "🚀🌍 Can't help but admire @elonmusk's incredible vision, passion, and relentless pursuit of innovation! From
-          Tesla to SpaceX and beyond, he's reshaping the future in ways that leave me in awe. Inspired by your genius,
-          @elonmusk! #Innovation #Admiration"</p>
-        <footer>
-          <p>10 days ago</p>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-      <article class="tweet">
-        <header>
-          <div>
-            <i class="fa-solid fa-mobile"></i>
-            <span>Amanda.C</span>
-          </div>
-          <p>@all_in_on_tesla_stock</p>
-        </header>
-        <p>
-          "🌌🚀🔥 In a world full of dreamers, @elonmusk shines as a visionary leader who dares to turn dreams into reality
-          From electric cars to space exploration, his audacious ideas inspire us all to reach for the stars. Thank you,
-          @elonmusk, for pushing boundaries and igniting our imaginations! #Innovation #Inspiration"
-        </p>
-        <footer>
-          <p>10 days ago</p>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+
+    <section id="tweet-container">
+
     </section>
-<section id="tweet-container">
-  
-</section>
   </main>
 </body>
 
