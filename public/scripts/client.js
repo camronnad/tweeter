@@ -1,10 +1,7 @@
 $(document).ready(function() {
  
-
-
-
 const createTweetElement = function (tweet) {
-
+console.log(tweet);
   const $tweet = $('<article>').addClass('tweet');
   const $header = $('<header>');
 
@@ -25,59 +22,55 @@ const createTweetElement = function (tweet) {
 };
 
 const renderTweets = function (tweets) {
-
+  $('#tweet-container').empty();
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
     $('#tweet-container').append($tweet);
   }
 };
 
+const loadTweets = function() {
+  $.ajax({
+    url: '/tweets',
+    type: 'GET',
+    dataType: 'json',
+    success: function(tweets) {
+      renderTweets(tweets);
+      
+    },
+    error: function(error) {
+      console.log('Error:', error);
+    }
+  });
+};
 
 
-
-  $('#tweet-form').submit(function (event) {
+$('#tweet-form').submit(function (event) {
     event.preventDefault();
 
     const data = $(this).serialize();
-
-    $.ajax({
+    const tweetText = $("#tweet-text").val();
+  
+     if (tweetText === "" || tweetText === null) {
+     alert("Tweet cannot be empty :(")
+     }
+    else if (tweetText.length > 140) {
+      alert("Too many characters")
+     }
+     else {
+    
+      $.ajax({
       url: '/tweets',
       type: 'POST',
-      data: data,
-      success: function (response) {
-        //refresh tweets
-      },
-      error: function (error) {
+      data: data
 
-      }
-    });
-  });
+     }) .then(loadTweets)
+        .catch(error => error)
 
-
-
-
-  const loadTweets = function() {
-      $.ajax({
-        url: '/tweets',
-        type: 'GET',
-        dataType: 'json',
-        success: function(tweets) {
-          console.log(tweets);
-          renderTweets(tweets);
-           // This will log the array of tweets to the console
-          // Here you can add code to handle the data and update your webpage
-        },
-        error: function(error) {
-          console.log('Error:', error);
-          // Here you can add code to handle any errors
-        }
-      });
-    }
-    
-    // Call the function to load the tweets
-    loadTweets();
-    
-
-  });
-
+    $('.counter').text(140)
+    $('#tweet-text').val('')
+  };
+});
+loadTweets()
+});
 
