@@ -9,8 +9,7 @@
 </div>
 
 <div align="center" style="display: flex; flex-direction: column; align-items: center;">
-    <img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="400px">
-    width="400px">
+    <img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="900px">
 </div>
 
 
