@@ -8,7 +8,11 @@
     <img src="https://github.com/camronnad/tweeter/blob/master/public/images/mobile-version.png" alt="Mobile Version" width="400px">
 </div>
 
-<img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="400px">
+<div align="center" style="display: flex; flex-direction: column; align-items: center;">
+    <img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="400px">
+    width="400px">
+</div>
+
 
 ## Getting Started
 
