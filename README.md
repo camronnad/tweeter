@@ -58,6 +58,6 @@ Contributions to Tweeter are welcome! If you have any bug fixes, improvements, o
 
 <p align="center">
   Made with ❤️ by Camron Naderi •
-  [My Portfolio](https://github.com/camronnad)
+  My Portfolio ==> (https://github.com/camronnad)
 </p>
 
