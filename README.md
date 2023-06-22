@@ -11,7 +11,8 @@
   <a href="#contributing">Contributing</a> •
 </p>
 
-![Tweeter Screenshot](screenshot.png)
+<img src="https://github.com/camronnad/tweeter/blob/master/public/images/mobile-version.png" alt="Mobile Version" width="400px">
+<img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="400px">
 
 ## Getting Started
 
