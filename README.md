@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="tweeter-logo.png" alt="Tweeter Logo" width="400px">
+  <img src="https://github.com/camronnad/tweeter/blob/master/public/images/tweeter-logo.png" alt="Tweeter Logo" width="400px">
 </h1>
 
 <p align="center">Tweeter is a simple, single-page Twitter clone featuring Elon Musk's account.</p>
