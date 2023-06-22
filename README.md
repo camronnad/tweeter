@@ -4,15 +4,10 @@
 
 <p align="center">Tweeter is a simple, single-page Twitter clone featuring Elon Musk's account.</p>
 
-<p align="center">
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#features">Features</a> •
-  <a href="#future-enhancements">Future Enhancements</a> •
-  <a href="#contributing">Contributing</a> •
-</p>
-
-<img src="https://github.com/camronnad/tweeter/blob/master/public/images/mobile-version.png" alt="Mobile Version" width="400px">
-<img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="400px">
+<div align="center">
+  <img src="https://github.com/camronnad/tweeter/blob/master/public/images/mobile-version.png" alt="Mobile Version" width="400px">
+  <img src="https://github.com/camronnad/tweeter/blob/master/public/images/desktop-version.png" alt="Desktop Version" width="400px">
+</div>
 
 ## Getting Started
 
@@ -61,4 +56,5 @@ Contributions to Tweeter are welcome! If you have any bug fixes, improvements, o
   Made with ❤️ by Camron Naderi •
   My Portfolio ==> (https://github.com/camronnad)
 </p>
+
 
