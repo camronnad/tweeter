@@ -24,7 +24,7 @@ $(document).ready(function () {
     $("#tweet-container").empty();
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $("#tweet-container").append($tweet);
+      $("#tweet-container").prepend($tweet);
     }
   };
 

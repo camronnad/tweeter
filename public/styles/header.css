@@ -3,12 +3,12 @@
   align-items: center;
   display: flex;
   width: 100%;
-  padding-top: 170px;
   height: 400px;
   flex-direction: column;
   background-color: #898989;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  
+  padding-top: 170px;
+ 
 }
 
 

@@ -27,6 +27,50 @@ margin: 0 5%;
 background-color: #f4f1ec;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+ body {
+   display: flex;
+   }
+  
+   form {
+    margin-top: 85px ;
+  }
+
+  .header {
+  margin: 80px;
+  margin-top: 170px;
+  padding: 50px;
+  padding-top: 50px;
+}
+
+.header-avatar {
+  padding-top: 65px;
+}
+   
+#tweet-text {
+  padding-bottom: 60px;
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+   
+  body {
+      display: flex;
+    }
+
+    form {
+      margin-top: 85px ;
+    }
+    .header {
+      margin: 80px;
+      margin-top: 170px;
+      padding: 2.5em;
+    }
+
+    .header-avatar {
+      padding-top: 65px;
+    }
+}
