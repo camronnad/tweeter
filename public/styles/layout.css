@@ -44,6 +44,7 @@ main {
     margin-top: 170px;
     padding: 50px;
     padding-top: 50px;
+    border: 5px solid #4a4a4a;;
   }
 
   .header-avatar {
@@ -68,6 +69,7 @@ main {
     margin: 80px;
     margin-top: 170px;
     padding: 2.5em;
+    border: 5px solid #4a4a4a;
   }
 
   .header-avatar {
