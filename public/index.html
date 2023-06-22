@@ -1,90 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Meta Information -->
-  <title>Tweeter - Home Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    type="text/css" />
+    <!-- App CSS -->
 
-  <!-- App CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <link rel="stylesheet" href="./styles/header.css" type="text/css" />
-  <link rel="stylesheet" href="./styles/tweet-article.css" type="text/css" />
-  <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
-  <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/tweet-article.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
 
-  <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap"
-    rel="stylesheet">
-    
+    <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- External JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-
-  <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js"></script>
-  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-  <script src="
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+    <script
+      src="
 https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.2/timeago.min.js
-" integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+"
+      integrity="sha512-sl01o/gVwybF1FNzqO4NDRDNPJDupfN0o2+tMm4K2/nr35FjGlxlvXZ6kK6faa9zhXbnfLIXioHnExuwJdlTMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
+  <body>
+    <!-- Top nav bar (fixed) -->
 
-<body>
-  <!-- Top nav bar (fixed) -->
+    <nav>
+      <span>tweeter</span>
+      <div class="nav-icons">
+        <p><strong>Write</strong> a new tweet</p>
+        <i class="fa-solid fa-angles-down" style="color: white"></i>
+      </div>
+    </nav>
 
-  <nav>
-
-    <span>tweeter</span>
-    <div class="nav-icons">
-      <p><strong>Write</strong> a new tweet</p>
-      <i class="fa-solid fa-angles-down" style="color: white"></i>
-    </div>
-  </nav>
-
-  <header class="header">
-    <span class="header-avatar">
-      <img class="elon" src="../images/elon-image.png">
-      <div id="badge">
-        <img id="verified-badge" src="./images/verified-badge.png" </div>
-    </span>
-    <div>
-      <h2 id="user-name"><strong>Elon</strong> Musk</h2>
-    </div>
-  </header>
-
-
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <form id="tweet-form">
-        <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
-        <div id="error-message" style="display: none;"></div>
-        <div id="tweet-button">
-          <button id="tweet-button" type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+    <header class="header">
+      <span class="header-avatar">
+        <img class="elon" src="../images/elon-image.png" />
+        <div id="badge">
+          <img id="verified-badge" src="./images/verified-badge.png"
         </div>
-      </form>
-    </section>
+      </span>
+      <div>
+        <h2 id="user-name"><strong>Elon</strong> Musk</h2>
+      </div>
+    </header>
 
-    <section id="tweet-container">
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <form id="tweet-form">
+          <textarea
+            placeholder="What are you humming about?"
+            name="text"
+            id="tweet-text"
+          ></textarea>
+          <div id="error-message" style="display: none"></div>
+          <div id="tweet-button">
+            <button id="tweet-button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
 
-    </section>
-  </main>
-</body>
-
+      <section id="tweet-container"></section>
+    </main>
+  </body>
 </html>

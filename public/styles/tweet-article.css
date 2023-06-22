@@ -15,8 +15,6 @@ article.tweet header {
   margin-top: -15px;
   margin-bottom: -20px;
   color: rgb(25, 34, 63);
-  
-  
 }
 
 article.tweet footer {
@@ -27,24 +25,20 @@ article.tweet footer {
   border-top: 2px solid black;
   font-size: small;
   margin-top: -5px;
-  
 }
 
 article.tweet:hover {
- box-shadow: 5px 5px #4056A1
+  box-shadow: 5px 5px #4056a1;
 }
 
 article.tweet .fa-flag:hover {
-color: darkgoldenrod
-
+  color: darkgoldenrod;
 }
 
 article.tweet .fa-retweet:hover {
-  color: green
-  
-  }
+  color: green;
+}
 
 article.tweet .fa-heart:hover {
   color: red;
-    
-  }
+}

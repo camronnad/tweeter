@@ -3,10 +3,13 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,55 +25,52 @@ body {
 }
 
 main {
-width: 90%;
-margin: 0 5%;
-background-color: #f4f1ec;
+  width: 90%;
+  margin: 0 5%;
+  background-color: #f4f1ec;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    display: flex;
+  }
 
- body {
-   display: flex;
-   }
-  
-   form {
-    margin-top: 85px ;
+  form {
+    margin-top: 85px;
   }
 
   .header {
-  margin: 80px;
-  margin-top: 170px;
-  padding: 50px;
-  padding-top: 50px;
-}
+    margin: 80px;
+    margin-top: 170px;
+    padding: 50px;
+    padding-top: 50px;
+  }
 
-.header-avatar {
-  padding-top: 65px;
-}
-   
-#tweet-text {
-  padding-bottom: 60px;
-}
+  .header-avatar {
+    padding-top: 65px;
+  }
 
+  #tweet-text {
+    padding-bottom: 60px;
+  }
 }
-
 
 @media only screen and (min-width: 1024px) {
-   
   body {
-      display: flex;
-    }
+    display: flex;
+  }
 
-    form {
-      margin-top: 85px ;
-    }
-    .header {
-      margin: 80px;
-      margin-top: 170px;
-      padding: 2.5em;
-    }
+  form {
+    margin-top: 85px;
+  }
 
-    .header-avatar {
-      padding-top: 65px;
-    }
+  .header {
+    margin: 80px;
+    margin-top: 170px;
+    padding: 2.5em;
+  }
+
+  .header-avatar {
+    padding-top: 65px;
+  }
 }

@@ -53,7 +53,7 @@ $(document).ready(function () {
     } else if (tweetText.length > 140) {
       $("#error-message").text("Too many characters").css("display", "block");
     } else {
-      $("#error-message").css("display", "none")
+      $("#error-message").css("display", "none");
       $.ajax({
         url: "/tweets",
         type: "POST",

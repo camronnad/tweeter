@@ -4,33 +4,28 @@ nav {
   color: white;
   font-family: "Bungee", sans-serif;
   width: 100vw;
-  background-color: #4056A1;
+  background-color: #4056a1;
   padding: 0 1.5em;
   position: fixed;
   max-height: 120px;
   min-height: 6rem;
-
 }
 
 .nav-icons {
-font-family: sans-serif;
-margin-left: auto;
-font-size: 17px;
-justify-content: center;
-
+  font-family: sans-serif;
+  margin-left: auto;
+  font-size: 17px;
+  justify-content: center;
 }
 
 nav > div > i {
-margin-left: 3.5em;
-
+  margin-left: 3.5em;
 }
 
-nav > div  p {
+nav > div p {
   margin-bottom: 10px;
-  
 }
 
 .fa-solid fa-angles-down {
   font-size: x-large;
 }
-

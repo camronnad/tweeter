@@ -12,13 +12,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  
 }
 
 button {
   font-family: "Bungee", sans-serif;
   color: white;
-  background-color: #4056A1;
+  background-color: #4056a1;
   border: none;
   margin-bottom: 20px;
   margin-top: 10px;
