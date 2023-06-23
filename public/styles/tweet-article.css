@@ -6,15 +6,31 @@ article.tweet {
   margin-bottom: 30px;
 }
 
-article.tweet header {
+.tweet-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: x-large;
-  margin-top: -15px;
-  margin-bottom: -20px;
+  /* margin-top: -15px;
+  margin-bottom: -20px; */
   color: rgb(25, 34, 63);
+}
+.div-header {
+  display: flex;
+  height: 35px;
+  padding-top: 5px;
+}
+
+article.tweet p {
+  font-size: smaller;
+  margin: none;
+  padding-left: 15px;
+}
+
+
+.tweet-handle {
+  font-size: 14px;
 }
 
 article.tweet footer {
